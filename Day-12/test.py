@@ -1,4 +1,4 @@
-def update_server_config(file_path, key, value):
+def update_server_conf(file_path, key, value):
 
     with open(file_path, "r") as file:
         lines = file.readline()
@@ -10,4 +10,4 @@ def update_server_config(file_path, key, value):
             else:
                 file.write(line)
 
-update_server_config("server.config", "MAX_CONNECTIONS", "1000")
+update_server_conf("server.conf", "MAX_CONNECTIONS", "1000")
